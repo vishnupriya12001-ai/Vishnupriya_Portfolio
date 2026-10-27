@@ -100,7 +100,7 @@ export default function Page() {
               <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
                 {/* Resume Download */}
                 <Link
-                  href="/resume.pdf"
+                  href="/#"
                   download
                   className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm font-medium shadow-sm transition-all duration-200 hover:bg-foreground hover:text-background"
                 >

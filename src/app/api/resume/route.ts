@@ -60,8 +60,8 @@ export async function GET() {
     lines.push("- " + p.title);
     lines.push("  " + p.description);
     lines.push("  Tools: " + (p.technologies as readonly string[]).join(", "));
-    const link = (p.links as { type: string; href: string }[])?.[0];
-    if (link) lines.push("  Link : " + link.href);
+   // const link = (p.links as { type: string; href: string }[])?.[0];
+    //if (link) lines.push("  Link : " + link.href);
     lines.push("");
   }
 
