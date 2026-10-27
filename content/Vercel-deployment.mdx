@@ -1,0 +1,80 @@
+---
+title: "How to Deploy Your Project Frontend, Backend and How to Connect Them"
+publishedAt: "2024-10-19"
+summary: "Deploying through Vercel is a quick and efficient process for hosting web applications. By connecting your Git repository (e.g., GitHub, GitLab, or Bitbucket) to Vercel, you can easily deploy projects like React.js, Next.js, or static websites. Vercel automatically detects your project framework, configures the build settings, and handles deployment with minimal setup. You can also manage environment variables and configure custom domains. With automatic deployments on code changes, Vercel offers a seamless platform for continuous delivery and hosting"
+---
+
+
+## Deploying your project frontend with Vercel Here's a step-by-step guide:
+
+
+**1. Sign in to Vercel**
+
+- Go to [Vercel](https://vercel.com) and log in or sign up.
+
+**2. Create a New Project**
+
+-Click on the “New Project” button.
+
+- Connect your GitHub, GitLab, or Bitbucket account (if you haven’t already).
+
+-Select the repository containing your project.
+
+**3. Configure Build Settings**
+
+- Vercel automatically detects the framework (e.g., React.js, Next.js).
+- Verify the build command and output directory:
+    - **React.js:**
+    - Build Command: `npm run build`
+    - Output Directory: `build`
+    - **Next.js:**
+    - Build Command: `npm run build`
+    - Output Directory: `.next`
+
+ (*If your framework isn’t detected correctly, choose "Other" and set these manually.*)
+
+**4. Click Deploy**
+
+- Vercel will start building and deploying your project.
+
+- Once done, you’ll see a live preview of your site!
+
+## Deploying your project Backend with Render Here's a step-by-step guide:
+
+**1. Sign in to Render**
+
+- Go to [Render.com](https://render.com) and log in or sign up for an account. 
+
+**2. Create a New Web Service**
+
+- Click the “New” button on your dashboard and select "Web Service".
+- Connect your GitHub, GitLab, or Bitbucket account if you haven’t already.
+
+**3. Select Your Repository**
+
+- Choose the repository that contains your backend code.
+
+**4. Configure the Web Service**
+
+- Environment: Select the appropriate environment (e.g., Node, Python, etc.).
+- Branch: Choose the branch you want to deploy (typically `main`).
+- Build Command: Enter the command to build your backend (e.g., `npm install` for Node.js).
+- Start Command: Specify the command to run your backend server (e.g., `npm start` or `node server.js`).
+
+**5. Set Environment Variables (if needed)**
+
+- If your project requires environment variables (e.g., API keys, database credentials), you can add them under Settings → **Environment Variables**.
+
+**6. Deploy Your Backend**
+
+- Click "Create Web Service" to initiate the deployment.
+- Render will automatically build and deploy your backend.
+- Once completed, Render will provide you with a live URL to access your backend.
+
+## Connect Frontend and Backend Here's a step-by-step guide
+
+Once your backend is live on Render, connect it to your frontend hosted on Vercel:
+
+- Use the backend URL provided by Render (e.g., https://your-backend.onrender.com) in your frontend API calls.
+
+- Update the frontend code to make requests to this URL, ensuring your frontend and backend communicate seamlessly.
